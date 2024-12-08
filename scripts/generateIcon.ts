@@ -1,0 +1,13 @@
+// This is just to show you the icon - save the actual PNG file directly
+const iconBase64 = `iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA
+7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGESURBVFiF7ZY9SwNBEIYf
+RURBFCxEgoVgYSGIjYUIFhYiaCGCjYUIKayFIFhYiJ2FhYU2FvkPYmMhgoWFhYWFhYVY2Kgg4kfQQgyKGotdyZl
+c7iN3m4B5YWB35p15dnfudmGFFf4ZPUABmAMSwBDQrXGfRvYDe8A0sAa0aH0bsA9kgDFVv1X1zxixPEfANbAP9Jh
+xnzF+CgyYAz6NwTwwCfQBg8A4cGPkU0Cf6heADyP/BsaAHuAIeAFOgHYzZ86IZYEjoA0YAa6AJ2AHiIVNQDfwCNw
+Bw0b8ELgHVoEOYMeIPQNHRmwKyKu+HzgxclkgHiaBuOoLQNGIbwIJ1Y8Cl0bsFOhU/SZwZ8RugeEwCQwAL8A5MGT
+EV4B7YE31+0bsGTgwYlNAVvVDwLkRywCdYRJIqH4eKBmxDSCp+jHg3IidAAnVbwF3RuwGGAmTQBy4Ai6AISO+DGS
+BddXvGbEicGjEpoFr1Q8DF0bsEUiGSeAXEPkEVvgvfAIJFE3Ch9F0UAAAAABJRU5ErkJggg==`;
+
+// Convert base64 to PNG and save it
+const buffer = Buffer.from(iconBase64, 'base64');
+require('fs').writeFileSync('resources/icon.png', buffer); 
